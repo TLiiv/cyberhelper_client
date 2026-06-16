@@ -1,6 +1,6 @@
 import { Box, Text, Heading, VStack, Flex, Highlight } from "@chakra-ui/react";
 import { useState } from "react";
-import { LuArrowDown, LuArrowRight } from "react-icons/lu";
+import { LuArrowDown } from "react-icons/lu";
 
 const TutorialPage: React.FC = () => {
   const [showFakeUrl, setShowFakeUrl] = useState(false);
