@@ -32,7 +32,8 @@ const EmailInbox: React.FC<{
   useEffect(() => {
     setLoading(true);
     axios
-      .get<Email[]>("https://localhost:7225/api/Emails/random")
+      axios
+      .get<Email[]>(`${import.meta.env.VITE_API_URL}/api/Emails/random`)
       .then((response) => {
         setEmails(response.data);
         updateTotalEmails(response.data.length);

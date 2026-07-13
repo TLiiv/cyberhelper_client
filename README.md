@@ -56,11 +56,11 @@ export default tseslint.config({
 Build the image:
 
 ```bash
-docker build -t portfolio .
+docker build -t cyberhelper-client .
 ```
 
 Run the container:
 
 ```bash
-docker run -p 8080:80 portfolio
+docker run -p 8080:80 cyberhelper-client
 ```
