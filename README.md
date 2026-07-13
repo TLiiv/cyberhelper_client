@@ -50,3 +50,17 @@ export default tseslint.config({
   },
 })
 ```
+
+## Docker
+
+Build the image:
+
+```bash
+docker build -t portfolio .
+```
+
+Run the container:
+
+```bash
+docker run -p 8080:80 portfolio
+```
